@@ -1,0 +1,25 @@
+---
+import DefaultPage from "../layouts/DefaultPage.astro";
+import ReactCounter from "../components/ReactCounter"
+import SvelteCounter from "../components/SvelteCounter.svelte"
+---
+
+<style>
+  section{
+    display: flex;
+    justify-content: space-around;
+  }
+</style>
+
+<DefaultPage
+  title="Mixed components"
+  description="Astro page using React and Svelte components"
+>
+  <main slot="body">
+		<h2>Astro using React and Svelte components</h2>
+		<section>
+      <ReactCounter client:load />
+      <SvelteCounter client:load />
+    </section>
+  </main>
+</DefaultPage>

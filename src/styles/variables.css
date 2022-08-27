@@ -1,0 +1,14 @@
+
+:root{
+  --primary-color:red;
+  --primary-color-contrast:#fff;
+  --secondary-color:green;
+  --secondary-color-contrast:#fff;
+  --accent-color:#333;
+  --accent-color-contrast:#efef;
+  --paper-color:#ccc;
+  --background-color:#fff;
+  --page-padding: 1rem 2rem;
+  --base-color: #fff;
+  --base-color-contrast: #111;
+}

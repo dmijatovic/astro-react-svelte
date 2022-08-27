@@ -1,0 +1,37 @@
+---
+import type { Link } from '../config/menuItems';
+export interface Props{
+  links:Link[]
+}
+// extract links
+const {links} = Astro.props
+---
+<style>
+  header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--page-padding, 2rem);
+    background-color: var(--primary-color,#fff);
+    color: var(--primary-color-contrast,#111);
+  }
+  a{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  a:hover{
+    font-weight: 800;
+  }
+</style>
+
+<header>
+  <h1>Title</h1>
+  <nav>
+    {links.map(link=>{
+      return <a href={link.href}>{link.label}</a>
+    })}
+  </nav>
+</header>

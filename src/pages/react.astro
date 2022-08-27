@@ -1,0 +1,16 @@
+---
+import DefaultPage from "../layouts/DefaultPage.astro";
+import ReactCounter from "../components/ReactCounter"
+
+---
+<DefaultPage
+  title="React components"
+  description="Astro page using Rect components"
+>
+  <main slot="body">
+		<h2>Astro using React components</h2>
+    <section>
+      <ReactCounter client:load />
+    </section>
+  </main>
+</DefaultPage>

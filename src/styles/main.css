@@ -1,0 +1,34 @@
+@import "variables.css";
+
+html,body{
+  margin:0;
+  padding:0;
+}
+
+body{
+  box-sizing: border-box;
+  background-color: var(--background-color,#fff);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+main{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  padding: var(--page-padding,2rem);
+}
+
+.container{
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+button{
+  cursor: pointer;
+}

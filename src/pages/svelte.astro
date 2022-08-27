@@ -1,0 +1,13 @@
+---
+import DefaultPage from "../layouts/DefaultPage.astro";
+import SvelteCounter from "../components/SvelteCounter.svelte"
+---
+<DefaultPage
+  title="Svelte components"
+  description="Astro page using Svelte components"
+>
+  <main slot="body">
+		<h2>Astro using Svelte components</h2>
+		<SvelteCounter client:load />
+  </main>
+</DefaultPage>
