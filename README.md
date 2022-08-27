@@ -39,6 +39,28 @@ Passing child elements is done using \<slot/> tag. It supports named slots.
 
 Style tag can be used in components and it is scoped by default.
 
+## SSR
+
+There are number of [supported SSR solution](https://docs.astro.build/en/guides/integrations-guide/deno/). For me Node and Deno are most interesting.
+
+### Node
+
+The adapter will create output that can be runned in node server like Express.
+
+More information is in [documentation](https://docs.astro.build/en/guides/integrations-guide/node/)
+
+```bash
+npm i @astrojs/node
+```
+
+Deno
+
+More information in [documentation](https://docs.astro.build/en/guides/integrations-guide/deno/)
+
+```bash
+npm i @astrojs/deno
+```
+
 ## Welcome to [Astro](https://astro.build)
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
